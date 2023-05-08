@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    background-color: #f2f2f2;
+}
+
+.spolecznosci{
+    border-bottom: 1px solid #333333;
+    color: #333333;
+
+    flex-wrap: wrap;
+    padding-top: 25px;
+    height: 40px;
+}
+
+h1{
+    font-size: 24px;
+    width: 350px;
+    margin-left: 25px;
+    color: #333333;
+}
+
+.przywitanie{
+    width: 50%;
+
+    display: inline-block;
+}
+
+.photo{
+    width: 25px;
+    height: 23px;
+}
+
+
+li{
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.portaleSpolecznosciowe{
+    width: 25%;
+    height: 30px;
+    float: right;
+}
+
+.tytul{
+    text-align: center;
+    border: 1px solid white;
+}
+
+h2{
+    font-size: 85px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#glo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container{
+    background-color: #333333;
+    width: 68%;
+    height: 750px;
+    margin: auto;
+    border-radius: 5px;
+
+    padding-top: 30px;
+}
+
+#inputTytulBloga{
+    width: 85%;
+    height: 70px;
+    border-radius: 15px;
+    font-size: 30px;
+    color: #333333;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+
+#inputTytulBloga:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+}
+
+
+.tutulBlogu{
+    background-color: #333333;
+
+
+    border-radius: 25px;
+}
+
+.opisBlogu{
+    background-color: #333333;
+    height: 500px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+#inputOpisBloga{
+    width: 85%;
+    height: 400px;
+    border-radius: 15px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+
+#inputOpisBloga:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+}
+
+.przyciskiWysylanieBlogu{
+    width: 100px;
+    height: 220px;
+    display: inline;
+
+    background-color: green;
+}
+
+#anulujPrzycisk{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+    margin-left: 15%;
+    float: left;
+}
+
+#anulujPrzycisk, #anulujPrzycisk span{
+    transition: 200ms;
+}
+
+#anulujPrzycisk .text{
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+#anulujPrzycisk .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#anulujPrzycisk svg {
+    width: 15px;
+    fill: #eee;
+}
+
+#anulujPrzycisk:hover {
+    background: #ff3636;
+}
+
+#anulujPrzycisk:hover .text {
+    color: transparent;
+}
+
+#anulujPrzycisk:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+#anulujPrzycisk:focus {
+    outline: none;
+}
+
+#anulujPrzycisk:active .icon svg {
+    transform: scale(0.8);
+}
+
+.wyslijPrzycisk{
+    width: 150px;
+    font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.2s;
+  float: left;
+  margin-left: 45%;
+}
+
+.wyslijPrzycisk span {
+    display: block;
+    margin-left: 0.5em;
+    transition: all 0.3s ease-in-out;
+}
+
+.wyslijPrzycisk svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wyslijPrzycisk:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.wyslijPrzycisk:hover svg {
+    transform: translateX(2.0em) rotate(45deg) scale(1.1);
+}
+
+.wyslijPrzycisk:hover span {
+    transform: translateX(5em);
+}
+
+.wyslijPrzycisk:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+      }
+    }
+    
+  
+  
+  
+
+
+
+
+
+
+
+
+section{
+    background-color: #f2f2f2;
+    height: 80vh;
+    border: 1px solid black;
+}
+
+.dodajPost{
+    width: 180px;
+    height: 50px;
+
+    margin-left: 35%;
+    margin-top: 10%;
+    cursor: pointer;
+
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
+    background-color: #333333;
+    color: #f2f2f2;
+}
+.dodajPost:active {
+    background-color: #333333;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.menuLista{
+    display: inline;
+
+    font-size: 20px;    
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.menuUl{
+    margin-left: 11%;
+    padding-top: 20px;
+}
+
+.menu{
+    width: 40%;
+    height: 80vh;
+    float: left;
+
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+
+
+#posty{
+    width: 59%;
+    height: 80vh;
+    float: right;
+    overflow-x: scroll;
+}
+
+.serce{
+    width: 25px;
+    height: 23px;
+    float: right;
+    margin-left: 1%;
+}
